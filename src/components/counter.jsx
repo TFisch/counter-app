@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
 
 class Counter extends Component {
+  state = {
+    count: 2
+  };
   render() {
     return (
       <React.Fragment>
-        <h1>Hello World </h1>
+        <span>{this.state.count}</span>
         <button>Increment</button>
       </React.Fragment>
     );
